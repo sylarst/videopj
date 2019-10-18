@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--APP名称 start-->
+    <!--请同时更改values-zh/string.xml-->
+    <string name="frame_name">WMS</string>
+    <string name="frame_label">WMS</string>
+</resources>

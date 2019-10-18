@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+
+android {
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION.toInteger()
+        targetSdkVersion TARGET_SDK_VERSION.toInteger()
+        versionCode VERSION_CODE.toInteger()
+        versionName "${VERSION_NAME}"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+        dirs project(':source_library').file('libs')
+
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:${APPCOMPAT_V7_VERSION}"
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_VERSION}"
+    testImplementation "junit:junit:${JUNIT_VERSION}"
+    androidTestImplementation "com.android.support.test:runner:${RUNNER_VERSION}"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:${ESPRESSO_CORE_VERSION}"
+    //------arouter
+    implementation "com.alibaba:arouter-api:${AROUTER_VERSION}"
+    annotationProcessor "com.alibaba:arouter-compiler:${ANNOTATIONPROCESSOR_VERSION}"
+    //------eventbus
+    implementation "org.greenrobot:eventbus:${EVENTBUS_VERSION}"
+    //------指定版本
+    configurations.all {
+        resolutionStrategy.force "com.android.support:support-annotations:${APPCOMPAT_V7_VERSION}"
+    }
+    //------retrofit+okhttp+rxjava
+    implementation "com.squareup.retrofit2:retrofit:${RETROFIT_VERSION}"
+    implementation "com.google.code.gson:gson:${GSON_VERSION}"//Gson 库
+    //okhttp3
+    implementation "com.squareup.okhttp3:okhttp:${OKHTTP_VERSION}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${OKHTTP_VERSION}"
+    //下面两个是RxJava 和 RxAndroid
+    implementation "io.reactivex.rxjava2:rxandroid:${RXANDROID_VERSION}"
+    implementation "io.reactivex.rxjava2:rxjava:${RXJAVA_VERSION}"
+    implementation "com.squareup.retrofit2:converter-gson:${RETROFIT_VERSION}"//转换器，请求结果转换成Model
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${RETROFIT_VERSION}"//配合Rxjava 使用
+    //AutoDispose解决RxJava内存泄漏
+    implementation "com.uber.autodispose:autodispose:${AUTO_DISPOSE_VERSION}"
+    implementation "com.uber.autodispose:autodispose-android:${AUTO_DISPOSE_VERSION}"
+    implementation "com.uber.autodispose:autodispose-android-archcomponents:${AUTO_DISPOSE_VERSION}"
+    //butterknife
+    implementation "com.jakewharton:butterknife:${BUTTERKNIFE_VERSION}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${BUTTERKNIFE_VERSION}"
+    implementation "com.alibaba:fastjson:${FAST_JSON_VERSION}"
+    implementation "com.alibaba:fastjson:${FAST_JSON_ANDROID}"
+
+    implementation project(':source_library')
+}

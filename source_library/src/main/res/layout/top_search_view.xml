@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/padding_20"
+    android:layout_marginLeft="@dimen/padding_15"
+    android:layout_marginRight="@dimen/padding_15"
+    android:background="@drawable/top_search_view_shape"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="@dimen/padding_60">
+    <com.example.hg.uselibrary.view.ScanImageView
+        android:id="@+id/iv_scan"
+        app:scan_id="iv_scan"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:src="@mipmap/scan"
+        android:layout_width="@dimen/padding_30"
+        android:layout_height="@dimen/padding_30" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_28"
+        android:layout_marginLeft="@dimen/padding_14"
+        android:gravity="center"
+        android:background="@drawable/top_search_view_shape_2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <ImageView
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:src="@mipmap/search"
+            android:layout_width="@dimen/padding_20"
+            android:layout_height="@dimen/padding_20" />
+        <com.example.hg.uselibrary.view.SourceEditText
+            android:singleLine="true"
+            app:can_edite_pda="true"
+            android:id="@+id/et_search"
+            android:textSize="@dimen/sp_18"
+            android:textColor="#2E2E2E"
+            android:hint="请输入通知号"
+            android:layout_marginRight="@dimen/padding_30"
+            android:layout_weight="1"
+            android:background="#FFEEEEEE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

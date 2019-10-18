@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="RectView">
+        <attr name="rect_view_left_image_width" format="dimension"/>
+        <attr name="rect_view_left_image_height" format="dimension"/>
+        <attr name="rect_view_interval_width" format="dimension"/>
+        <attr name="rect_view_text_size" format="dimension"/>
+        <attr name="rect_view_text_color" format="color"/>
+        <attr name="rect_view_text" format="string"/>
+        <attr name="rect_view_left_image" format="reference"/>
+        <attr name="rect_view_background" format="reference"/>
+        <attr name="rect_view_background_radius" format="dimension"/>
+        <attr name="rect_view_background_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="BaseNavigation">
+        <attr name="top_navigation_left_image_width" format="dimension"/>
+        <attr name="top_navigation_left_image_height" format="dimension"/>
+        <attr name="top_navigation_left_image" format="reference"/>
+        <attr name="top_navigation_right_image_width" format="dimension"/>
+        <attr name="top_navigation_right_image_height" format="dimension"/>
+        <attr name="top_navigation_right_image" format="reference"/>
+        <attr name="top_navigation_left_text" format="string"/>
+        <attr name="top_navigation_left_text_color" format="color"/>
+        <attr name="top_navigation_left_text_size" format="dimension"/>
+        <attr name="top_navigation_center_text" format="string"/>
+        <attr name="top_navigation_center_text_color" format="color"/>
+        <attr name="top_navigation_center_text_size" format="dimension"/>
+        <attr name="top_navigation_right_text" format="string"/>
+        <attr name="top_navigation_right_text_color" format="color"/>
+        <attr name="top_navigation_right_text_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TopSearchView">
+        <attr name="top_search_view_left_image_width" format="dimension"/>
+        <attr name="top_search_view_left_image_height" format="dimension"/>
+        <attr name="top_search_view_left_image" format="reference"/>
+        <attr name="top_search_view_search_image_width" format="dimension"/>
+        <attr name="top_search_view_search_image_height" format="dimension"/>
+        <attr name="top_search_view_search_image" format="reference"/>
+        <attr name="top_search_view_search_margin" format="dimension"/>
+        <attr name="top_search_view_edit_marginLeft" format="dimension"/>
+        <attr name="top_search_view_edit_margin" format="dimension"/>
+        <attr name="top_search_view_edit_background_color" format="color"/>
+        <attr name="top_search_view_edit_background" format="color"/>
+        <attr name="top_search_view_edit_background_radius" format="dimension"/>
+        <attr name="top_search_view_background_color" format="color"/>
+        <attr name="top_search_view_background" format="color"/>
+        <attr name="top_search_view_background_radius" format="dimension"/>
+        <attr name="top_search_view_edit_text_size" format="dimension"/>
+        <attr name="top_search_view_edit_text_color" format="color"/>
+        <attr name="top_search_view_edit_text_hint" format="string"/>
+        <attr name="top_search_view_edit_text" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="ScanEditView">
+        <attr name="scan_edit_radius" format="dimension"/>
+        <attr name="scan_edit_line_width" format="dimension"/>
+        <attr name="scan_edit_text_color" format="color"/>
+        <attr name="scan_edit_text_size" format="dimension"/>
+        <attr name="scan_edit_line_color" format="color"/>
+        <attr name="scan_edit_image" format="reference"/>
+        <attr name="scan_edit_image_width" format="dimension"/>
+        <attr name="scan_edit_image_height" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SourceEditText">
+        <attr name="can_edite_pda" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ScanImageView">
+        <attr name="scan_id" format="string"/>
+    </declare-styleable>
+</resources>

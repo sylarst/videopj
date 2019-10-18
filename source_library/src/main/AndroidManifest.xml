@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hg.uselibrary">
+
+    <application
+        android:name=".SourceApplication"
+        tools:replace="android:name"
+        >
+        <service android:name=".EventPostService"/>
+    </application>
+    </manifest>

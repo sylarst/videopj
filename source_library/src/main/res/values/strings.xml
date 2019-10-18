@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">uselibrary</string>
+    <string name="back">返回</string>
+    <string name="title">标题</string>
+    <string name="normal_edit">请输入通知单号</string>
+</resources>

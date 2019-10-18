@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/search_result_shape"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/padding_15"
+    android:layout_marginRight="@dimen/padding_15"
+    android:layout_marginTop="@dimen/padding_20"
+    android:paddingTop="@dimen/padding_20"
+    android:paddingBottom="@dimen/padding_20"
+    android:id="@+id/ll_result"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/tzdh"
+            android:text="通知单号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_danhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv"
+            android:textColor="#129BFE"
+            android:textSize="@dimen/sp_18" />
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:background="@drawable/unload_state_shape"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#7E7E7E"
+        android:layout_width="match_parent"
+        android:layout_height="0.001dp"/>
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv"
+        android:textColor="#ff333333"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>

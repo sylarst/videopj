@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_text">#505050</color>
+    <color name="background">#f9f9f9</color>
+    <color name="theme_text_color">#3b78f5</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffff</color>
+    <color name="text_content">#7a7a7a</color>
+    <color name="shadow">#F7F7F7</color>
+    <color name="guide_corlor">#5FAAF7 </color>
+    <color name="text_first">#000000</color>
+    <color name="text_title">#333333</color>
+    <color name="text_second">#999999</color>
+    <color name="divider_line">#bfbfbf</color>
+    <color name="stroke_divider">#e4e4e4</color>
+    <color name="stroke_divider_inside">#e5e5e5</color>
+    <!--<color name="text_first">#999999</color>-->
+    <color name="top_view">#FFFFFF </color>
+    <color name="container_bg">#FAFAFA</color>
+    <color name="tzdh">#636262</color>
+    <color name="title_color">#000000</color>
+    <color name="divider">#eeeeee</color>
+    <color name="text_hint">#cccccc</color>
+    <color name="second_color">#999999</color>
+    <color name="first_color">#111111</color>
+    <color name="error">#F50404</color>
+</resources>
